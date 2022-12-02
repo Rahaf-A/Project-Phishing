@@ -1,0 +1,14 @@
+nav {
+    background-color: #058090;
+    border-radius: 10px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    list-style: none;
+    height: 100px;
+}
