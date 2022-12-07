@@ -1,3 +1,12 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    background: rgb(47,166,183);
+background: linear-gradient(180deg, rgba(47,166,183,1) 0%, rgba(255,255,255,1) 100%);
+}
+
 nav {
     background-color: #058090;
     border-radius: 10px;
@@ -11,4 +20,31 @@ nav {
     margin: 5px;
     list-style: none;
     height: 100px;
+}
+
+h1 {
+    font-size: 8.5vh;
+    color: #A32B2B;
+    /* Add a border to the text */
+}
+
+h2 {
+    color: #A32B2B;
+    text-align: center;
+    margin-top: 7vh;
+    /* Add a border to the text */
+}
+
+/* Fix tiling issue */
+.heroArea{
+    background-image: url(/images/blurry-hero.png);
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontent1 {
+    text-align: center;
+
 }
