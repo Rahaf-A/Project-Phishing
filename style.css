@@ -5,6 +5,8 @@
 body{
     background: rgb(47,166,183);
 background: linear-gradient(180deg, rgba(47,166,183,1) 0%, rgba(255,255,255,1) 100%);
+    margin: 0px;
+
 }
 
 nav {
@@ -17,7 +19,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: 5px;
+    margin: 0;
     list-style: none;
     height: 100px;
 }
@@ -38,13 +40,57 @@ h2 {
 /* Fix tiling issue */
 .heroArea{
     background-image: url(/images/blurry-hero.png);
-    height: 45vh;
+    height: 70vh;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 5px solid black;
+    background-size: cover;
 }
 
 .maincontent1 {
     text-align: center;
+    background-color:#1EA8BB ;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    border: 5px solid black;
+}
 
+.maincontenttext {
+    padding: 7vh;
+}
+
+.exbox {
+    background-color: #59C6D4;
+    margin: 4vh;
+    border: 2px solid black;
+
+}
+
+.subtext  {
+    padding: 3vh;
+
+}
+
+.subtitle {
+    padding-left: 3vh;
+    padding-top: 3vh;
+}
+
+.header-words {
+    color: #A32B2B;
+    text-align: center;
+    margin-top: 7vh;
+}
+
+.mainpage1 {
+display: flex;
+justify-content: center;
+}
+
+.steps-boxes {
+    background-color: #59C6D4;
+    border: 2px solid black;
+    margin: 5%;
 }
