@@ -18,14 +18,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     margin: 0;
     list-style: none;
     height: 100px;
 }
 
 h1 {
-    font-size: 8.5vh;
+    font-size: 10vh;
     color: #A32B2B;
     /* Add a border to the text */
 }
@@ -35,6 +34,10 @@ h2 {
     text-align: center;
     margin-top: 7vh;
     /* Add a border to the text */
+}
+
+.textpadding {
+    padding: 3vh;
 }
 
 /* Fix tiling issue */
@@ -51,14 +54,16 @@ h2 {
 
 .maincontent1 {
     text-align: center;
-    background-color:#1EA8BB ;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    background-color: #1EA8BB;
+    margin: 30vh;
     border: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 10vh;
 }
 
 .maincontenttext {
-    padding: 7vh;
 }
 
 .exbox {
@@ -93,4 +98,85 @@ justify-content: center;
     background-color: #59C6D4;
     border: 2px solid black;
     margin: 5%;
+}
+
+.mainboxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+ .mainboximgs {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+} 
+
+.mainbox1,
+.mainbox2,
+.mainbox3 {
+    background-color: #058090;
+    border: 1px solid black;
+    width: 25%;
+}
+
+
+.box1-h3,
+.box2-h3,
+.box3-h3 {
+    text-align: center;
+}
+
+.box1-hl,
+.box2-hl,
+.box3-hl {
+    text-align: right;
+    margin: 2vh;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #076471;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.footerlogo {
+    display: flex;
+    justify-content: left;
+}
+
+.footercontent {
+    display: flex;
+   justify-content: space-between;
+   list-style: none;
+   margin: 2vh;
+   margin-right: 25vh;
+}
+
+.logosize{
+    width: 6vh;
+    margin: 3vh;
+}
+
+.orgsize {
+    margin: 5vh;
+    margin-left: 1vh;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+.footerstuffaligned li{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
