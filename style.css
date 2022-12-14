@@ -8,11 +8,13 @@
 
 a {
     font-family: 'Sriracha', cursive;
+    display: flex;
+    padding: 17px;
 }
 
 body{
     background: rgb(47,166,183);
-background: linear-gradient(180deg, rgba(47,166,183,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(47,166,183,1) 0%, rgba(255,255,255,1) 100%);
     margin: 0px;
 
 }
@@ -56,14 +58,17 @@ h2 {
     font-family: 'Sriracha', cursive;
 
     text-align: center;
-    margin-top: 7vh;
-    font-size: 3.5vh;
+    margin-top: 7vw;
+    font-size: 3.5vw;
     /* Add a border to the text */
 }
 
+h3 {
+    font-size: 2.5vw;
+}
 
 .textpadding {
-    padding: 3vh;
+    padding: 3vw;
 }
 
 /* Fix tiling issue */
@@ -81,12 +86,12 @@ h2 {
 .maincontent1 {
     text-align: center;
     background-color: #1EA8BB;
-    margin: 20vw;
+    margin: 17vw;
     border: 5px solid black;
     display: flex;
     justify-content: space-around;
-    margin-top: 7vw;
-    margin-bottom: 10vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 
 
@@ -94,9 +99,13 @@ h2 {
     background-color: #59C6D4;
     margin: 4vw;
     border: 2px solid black;
-
+    /* width: 90%; */
     display: flex;
 }
+
+/* .protect-imgs {
+    width: 100%;
+} */
 
 .subtext  {
     padding: 3vw;
@@ -104,17 +113,23 @@ h2 {
 }
 
 .subtitle {
-    padding-left: 3vw;
-    padding-top: 3vw;
+    /* padding-left: 3vw;
+    padding-top: 3vw; */
     font-family: 'Sriracha', cursive;
+    font-size: 2vw;
     font-weight: 600;
     margin: 50px;
+    /* width: 7vw; */
+}
+
+.stepsimg {
+    width: 100%;
 }
 
 .header-words {
     color: #A32B2B;
     text-align: center;
-    margin-top: 7vw;
+    margin-top: 5vw;
 
     font-family: 'Sriracha', cursive;
 
@@ -128,8 +143,13 @@ justify-content: center;
 .steps-boxes {
     background-color: #59C6D4;
     border: 2px solid black;
-    margin: 5%;
+    margin: 6%;
+    margin-bottom: 2vw;
     text-align: center;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .mainboxes {
@@ -224,9 +244,270 @@ li {
     width: auto;
 }
 
-@media screen(max-width 1290) {
-   /* copy paste the css code */
-   /* go back and change vh to vw */
-   /* fix spacing with the maincontent1 and how first-time-viewers won't know to scroll down */
+/* .adjuststeps {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+@media screen and (max-width: 480px) {
+    *:not(h3, footer, li) {
+        /* font-family: 'Comfortaa', cursive; */
+    
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    a {
+        font-family: 'Sriracha', cursive;
+        display: flex;
+         padding: 17px;
+    }
+    
+    body{
+        background: rgb(47,166,183);
+        background: linear-gradient(180deg, rgba(47,166,183,1) 0%, rgba(255,255,255,1) 100%);
+        margin: 0px;
+    
+    }
+    
+    nav {
+        background-color: #058090;
+        border-radius: 10px;
+    
+    }
+    
+    .nav-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        list-style: none;
+        height: 100px;
+        font-size: 10px;
+    }
+    
+    h1 {
+        font-size: 12vh;
+        font-family: 'Sriracha';
+        color: #c80f0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #4fadb9b5; */
+        padding: 1rem 1.5rem;
+        border-radius: 1em;
+        text-shadow: 0 0 1px black;
+        -webkit-text-fill-color: #e63c3c;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-align: center;
+        /* Add a border to the text */
+    }
+    
+    
+    
+    h2 {
+        color: #A32B2B;
+        font-family: 'Sriracha', cursive;
+    
+        text-align: center;
+        margin-top: 7vw;
+        font-size: 5vw;
+        /* Add a border to the text */
+    }
+    
+    h3 {
+        font-size: 4vw;
+    }
+    
+    .textpadding {
+        padding: 3vw;
+    }
+    
+    /* Fix tiling issue */
+    .heroArea{
+        background-image: url(/images/blurry-hero-4.png);
+        height: 70vh;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid black;
+        background-size: cover;
+    }
+    
+    .maincontent1 {
+        text-align: center;
+        background-color: #1EA8BB;
+        margin: 17vw;
+        border: 5px solid black;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    
+    
+    .exbox {
+        background-color: #59C6D4;
+        margin: 4vw;
+        border: 2px solid black;
+        /* width: 90%; */
+        display: flex;
+        width: 92vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* .protect-imgs {
+        width: 100%;
+    } */
+    
+    .subtext  {
+        padding: 3vw;
+        margin: 15px;
+    }
+    
+    .subtitle {
+        /* padding-left: 3vw;
+        padding-top: 3vw; */
+        font-family: 'Sriracha', cursive;
+        font-size: 6vw;
+        font-weight: 600;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        /* width: 7vw; */
+    }
+    
+    .stepsimg {
+        width: 100%;
+    }
+    
+    .header-words {
+        color: #A32B2B;
+        text-align: center;
+        margin-top: 5vw;
+    
+        font-family: 'Sriracha', cursive;
+    
+    }
+    
+    .mainpage1 {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .steps-boxes {
+        background-color: #59C6D4;
+        border: 2px solid black;
+        margin: 6%;
+        margin-bottom: 2vw;
+        text-align: center;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .mainboxes {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2%;
+    }
+    
+     .mainboximgs {
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+    } 
+    
+    .mainbox1,
+    .mainbox2,
+    .mainbox3 {
+        background-color: #058090;
+        border: 1px solid black;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    
+    .box1-h3,
+    .box2-h3,
+    .box3-h3 {
+        text-align: center;
+    }
+    
+    .box1-hl,
+    .box2-hl,
+    .box3-hl {
+        text-align: right;
+        margin: 2vw;
+    }
+    
+    .border {
+        border: 1px solid black;
+    }
+    
+    footer {
+        background-color: #076471;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10vw;
+    }
+    
+    .footerlogo {
+        display: flex;
+        justify-content: left;
+    }
+    
+    .footercontent {
+        display: flex;
+       justify-content: space-between;
+       list-style: none;
+       margin: 2vw;
+       margin-right: 25vw;
+    }
+    
+    .logosize{
+        width: 8vw;
+        /* margin: 3vw; */
+        height: 8vw;
+    }
+    
+    .orgsize {
+        margin: 5vh;
+        margin-top: 7vh;
+        margin-left: 1vh;
+        font-size: 25px;
+        font-family: 'Sriracha', cursive;
+    }
+    
+    li {
+        list-style: none;
+        font-family: 'Sriracha', cursive;
+    
+    }
+    
+    .footerstuffaligned li{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .adjuststeps1, .adjuststeps2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .protect-imgs {
+        width: 100%;
+
+    }
     
 }
